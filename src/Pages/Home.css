@@ -72,7 +72,7 @@ img{
     height: 100%;
     width: 100%;
     border-left: 2px solid red;
-    animation: typing 6s steps(21) infinite;
+    animation: typing 8s steps(21) infinite;
 }
 @keyframes typing{
     100% {
@@ -148,19 +148,6 @@ img{
     opacity: 0;
     animation: sidetop 3s forwards;
 }
-/* .about-compentent{
-    scale: .2; opacity: 0;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: 100px 600px;
-}
-@keyframes appear {
-    
-    to{
-        opacity: 1;
-        scale:1;
-    }
-} */
 /* Skills */
 
 .skills{
@@ -231,7 +218,6 @@ img{
 /* Contact */
 
 #Contact{
-    min-width: 70rem;
     text-align: center;
     justify-content: center;
     padding-top: 3%;
@@ -240,7 +226,7 @@ img{
     padding-bottom: 5%;
 }
 .input-feild input,textarea{
-    max-width: 70rem;
+     /* max-width: 70rem;  */
     width: 50%;
     padding: 1rem;
     font-size: 1rem;
@@ -255,7 +241,7 @@ img{
     width: 49%;
 }
 
-@media screen and (max-width:450px){
+@media only screen and (max-width:450px){
     .home-text{
         display: flex;
         flex-direction: column-reverse;
@@ -265,19 +251,26 @@ img{
     .icons{
         padding: 3%;
     }
+    .span{
+        width: 500px;
+    }
     /* About */
     .about-compentent{
         display: flex;
         flex-direction: column;
-        height: 600px;
-        width: 300px;
+        height: 650px;
+        width: 250px;
         align-items: center;
         text-align: center;
     }
     .about-text{
-        width: 450px;
+        width: 300px;
+
     }
     .contact{
-        width: 500px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

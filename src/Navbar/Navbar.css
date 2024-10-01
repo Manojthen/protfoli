@@ -37,7 +37,7 @@ nav{
     display: none;
 }
 
-@media (max-width:400px) {
+ @media only screen and (max-width:425px) {
     .menu_icon{
         position: absolute;
         display: block;
@@ -83,4 +83,4 @@ nav{
         color:#343148ff;
         border-bottom: 3px solid #343148ff;
     }
-}
+} 
